@@ -1,1 +1,18 @@
+name: ecoinnovators-env
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - pandas
+      - openpyxl
+      - pillow
+      - numpy
+      - scipy
+      - scikit-learn
+      - joblib
+      - requests
 
