@@ -1,1 +1,32 @@
+# Re-run: generate a fresh rf_solar_detector.pkl and save it for download.
+import numpy as np
+import joblib
+from sklearn.ensemble import RandomForestClassifier
+from PIL import Image, ImageDraw
+output_path = "/mnt/data/rf_solar_detector.pkl"
+# synthetic dataset
+X = []
+y = []
+for i in range(12):
+    img = Image.new("L", (64,64), color=200 if i % 2 == 0 else 40)
+    draw = ImageDraw.Draw(img)
+
+    # add rectangle to mimic solar panel
+    if i % 2 == 1:
+        draw.rectangle([10,10,50,35], fill=10)
+    arr = np.array(img).astype(float)
+    # handcrafted features
+    mean = float(arr.mean())
+    std = float(arr.std())
+    dark_prop = float((arr < 60).mean())
+    X.append([mean, std, dark_prop])
+    y.append(1 if i % 2 == 1 else 0)
+X = np.array(X)
+y = np.array(y)
+# Train RandomForest
+model = RandomForestClassifier(n_estimators=80, random_state=42)
+model.fit(X, y)
+# Save .pkl
+joblib.dump(model, output_path)
+output_path
 
