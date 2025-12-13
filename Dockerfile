@@ -15,3 +15,15 @@ COPY . .
 
 # Default command (runs inference script)
 CMD ["python", "evaluate.py"]
+
+https://hub.docker.com/repository/docker/harshitau/rooftop-pv-detector
+Tags:
+docker build -t harshitau/rooftop-pv-detector:v1.0 
+docker tag harshitau//rooftop-pv-detector:latest
+Push to DockerHub:
+docker login
+docker push harshitau/rooftop-pv-detector:v1.0
+docker push harshitau/rooftop-pv-detector:latest
+
+
+
