@@ -1,5 +1,3 @@
-# AI-Powered-Rooftop-PV-Detection
-
 # 🌞 AI-Powered Rooftop PV Detection
 
 An **AI-driven computer vision system** that automatically detects **rooftop solar photovoltaic (PV) panels** from **aerial and satellite imagery**.
@@ -171,8 +169,6 @@ Retraining instructions are provided in the **Model Card**.
 ## 👩‍💻 Author
 
 **Harshita U**
-Computer Science Engineering Student
-AI & Machine Learning Enthusiast
 
 ---
 
@@ -182,18 +178,5 @@ AI & Machine Learning Enthusiast
 * PyTorch & Ultralytics open-source community
 
 ---
-
-## 📬 Contact
-
-For questions, collaboration, or improvements, feel free to open an issue or reach out.
-
----
-
-If you want, I can also:
-
-* 🔧 Tailor this README for **hackathon submission**
-* 📄 Make it **IEEE / academic style**
-* 🎯 Shorten it for **project demo / pitch**
-* 📦 Prepare a **final submission checklist**
 
 Just tell me 👍
