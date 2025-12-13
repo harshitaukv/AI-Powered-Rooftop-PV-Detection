@@ -1,1 +1,17 @@
+[
+  {
+    "image": "data/test/roof_001.jpg",
+    "predicted_class": "solar_panel",
+    "confidence": 0.93,
+    "bbox": [124, 212, 308, 341],
+    "timestamp": "2025-09-12T14:32:11"
+  },
+  {
+    "image": "data/test/roof_002.jpg",
+    "predicted_class": "solar_panel",
+    "confidence": 0.88,
+    "bbox": [76, 180, 260, 325],
+    "timestamp": "2025-09-12T14:32:13"
+  }
+]
 
