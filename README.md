@@ -179,4 +179,3 @@ Retraining instructions are provided in the **Model Card**.
 
 ---
 
-Just tell me 👍
